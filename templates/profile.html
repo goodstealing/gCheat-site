@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>gCheat - Профиль</title>
+{% endblock %}
+
+
+{% block body %}
+
+<body>
+  <header class="d-flex justify-content-center py-3 mb-5">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Главная</a></li>
+      <li class="nav-item"><a href="/сheat-catalog" class="nav-link">Каталог</a></li>
+      <li class="nav-item"><a href="/profile" class="nav-link active">Профиль</a></li>
+      <li class="nav-item"><a href="/about-site" class="nav-link">О сайте</a></li>
+    </ul>
+  </header>
+
+  <br>
+
+  <div class="col-md-4 mx-auto">
+
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-3 shadow">
+        <div class="modal-body p-4 text-center">
+          <h5 class="mb-0 mb-2">Впервые на сайте?</h5>
+          <p class="mb-0" style="color: gray; font-size: 1em;">Если у вас уже есть учетная запись, пожалуйста, войдите,
+            используя свои учетные данные. В противном случае вы можете пройти простой процесс регистрации.</p>
+        </div>
+        <div class="modal-footer flex-nowrap p-0">
+          <a href="/sign-up"
+            class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><strong>Да,
+              зарегистрироваться</strong></a>
+          <a href="/login" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 "
+            data-bs-dismiss="modal"><strong>Нет, войти</strong></a></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+{% endblock %}

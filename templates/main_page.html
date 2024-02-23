@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+🗣️
+{% block head %}
+<!--<link rel="stylesheet" href="static/css/сheat-catalog_pg.css">-->
+<title>gCheat - Эксклюзивные Читы</title>
+<link rel="stylesheet" href="static/css/main_pg.css">
+
+{% endblock %}
+
+🧘
+{% block body %}
+<header class="d-flex justify-content-center py-3">
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Главная</a></li>
+    <li class="nav-item"><a href="/сheat-catalog" class="nav-link">Каталог</a></li>
+    <li class="nav-item"><a href="/profile" class="nav-link">Профиль</a></li>
+    <li class="nav-item"><a href="/about-site" class="nav-link">О сайте</a></li>
+  </ul>
+</header>
+
+<div class="container px-4 py-5">
+  <h2 class="pb-2 border-bottom">gCheat - твой выбор!</h2>
+  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-3">
+    <div class="col d-flex flex-column align-items-start gap-2">
+      <h2 class="fw-bold text-body-emphasis">Эксклюзивные Читы: Погрузитесь в Мир Безграничных Возможностей! </h2>
+      <p class="text-body-secondary">Исключительно на gCheat – приобретайте уникальное программное обеспечение,
+        созданное нашей командой профессионалов. Наш софт гарантированно безопасен для вашего компьютера на 100%.</p>
+      <a href="сheat-catalog" class="btn btn-primary btn-lg">Получить Возможность!</a>
+    </div>
+    <div class="col">
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEiklEQVR4nM2aS4wVRRSGG8WFyuCAEYkEnCgZQU1wFi54M4KJoxsXxsfGuEIN7E0E4sLwiCEBdygEFDbODBgCmiggyIALN5KgzhBXBo0KjhPDaAK+PnKYv6Sm6b5d3dP3dv9JL27dU1XnrzpV/6nqjqKcAOYDLwAbgPeA08B3wHlgBPhbz4jK7L9Tst2guvOiVgO4E3gV6Ad+oTxYW33AK9ZHMwn0AAeAKzEHLgAHgbeA1cBjNsLAvcA04BY901Q2TzarVeeg2vBxRX31lElgocLF4V/gqEbuwZL6mGRtaaaPqQ8H63vhRBq/FXgX+E8NDgPrgdllOJ/R92ytn2H1bT68DUzO29BUbxYuA5uAO5rmebof7cBmL5w/Md/yTPPHXvwvbrrH2T4t8dbRYfMxpNLzqnAJ6IxqAqATGJVvz4RU+FzGa6KaAVgj346EGDvW90Q1A2NbuGEkxNihPaoZgOnOuRBjahxaa4sQGa3xYiekgo9fgRUt8bSxT4vieV1IJQdLFZAYba5izTAmiFs8QTxahMhkYLv3e1hpw5wWEJgTS1EM2+RTPiLe78XAF65cCd1n2tMfClLZsGziYbV5PCFpXJTmXzCRWBq/X7lXfB0dArYqI16lTLYjIY3vEPlVst2qutaGj8vqqyfUv2Aisb38ZaAX+Jny8BPwgc4p04v6l9/wuv0Dys/WAbuBAWAI+F7H27/0jKjM/jspW6vzXJ5tnrFj8kCIYW2VPRfqrOxFidRG2YHHgZ3AOeAPPUM6wa5Mq+TDDjNLWu75+LTkZMBGcQKYW0tlB5Zpg0DpyevAAuB2PY9os3Cpy2/jBr0myt7pkegFpjSwbZONIzO3MmVPcM6FU29I+8oM7HLPcDyRSBOU3a5Yu70Lug+B12IL24XTlAbOPwX8CPwg39q8C4qVVSn7Oa99250M6zJmwQg4nFeZ3bsZ3mmFsg/KZrcW8LP+/YC2WMOCAkRsAzAMVa7suoYytGXY9YiM3fA/oTILL8OlypXd260aEkmpm0ikEmXXjpgZWknwQmuwUmUH7tIaMqwvUN90zrCjMmUXibOxQWzLefF+UXW7K1H2GImzOmAZ+nIIYr+bAFd4Da1S9hiJr/W7XRkucnBqxkz0e4N9XyKRMpQ9B4kZwM3AvlgfFyR2Xab2eroUIRc9EtdfgaQRmaCyn8og8U0CiT+Bp4FdAe0f+38mvA7cteSsNDIFlH2gAYlvgbtFYq/KLKy644MLfKoMd1T1dvh2aZnn2qgJSCFxE/C+R2LcNS0ZUZLWkb3AN/x+w6mreST2eCSWy9bfYAoRsa3sI9W1NdDVBBKDHgkLRxQuyzz7OAaKdHqb90LUBHGjva6eIJHTHomZsZR9HAmfSDRR6DBk77b/8WbnDRvJgu05OBIz9P7cSCwtJZwaAXgU+NJr22boiASxI0c7NzgGPGmiWmo4ZcEWob4PcTOEdyS1MHwTeElH1flxIQwZ4dJnIeDroBel8u7skITBgBmZCZxpWjjlAXC/jqsbJWgn9E1WX8wuFOWHU1QidIuehK/cBlAmrgKC+tobiBRrQQAAAABJRU5ErkJggg==">
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Зашифрованные данные</h4>
+          <p class="text-body-secondary">Эффективное шифрование данных предотвращает возможные утечки информации о
+            взаимодействии софта с серверами CS2, DOTA2, Rainbow Six, PUBG. </p>
+        </div>
+
+
+
+
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACb0lEQVR4nO2XT6gNURzHj6LHSqJHNhYsrCmlZKn3QlJWFhbEjiwU20epV7KiLJSU8mdBWVNESQo3ClmoeVKsvVD46Ny+k+l2ZubMOfeZOZnP5t7u/H6/+X3uuefc3xjT858BPASemdRBmNShF+kYnVkR4AwwTwNG8ks/82QemImV2AD8bnjjcYugHtbHiBwZloGbETWGROTfUonDJqLIVRU51qLIcZW4YiKKvFeRzS2KbFGJd6EFJlXgK7C4RZEl2vB2n0yGFNirHu6FNjEOEQvwQGX2mKYA55Q80wGRsyozG5L8RMk7OiCyS2UeN01cCnwHfgHLK+KeAy+BNaEiNhcYAE8rYlZqj3wDJpqIbNP9BzVxtgHLmzKZKhFJ2FzLi5p75XFbm4icVNJFj5PtdX48Amt9RYDVhdy3rtwiwGXFnjC+AHeVtN8jtlLGJdJUwgIcVPxt4wOwCPiipHWeOaUyoyIhEhZgo3I+m4YJH70SamSKIqESji+4foAEDin4Rm2wh0wuEiPh+MkfMHUUNlXQoDhyEuWvxfelJ1wdwCnVuOQTbL8ty6baYL+VKRK0EjnAdtV5ZaoAVumPJ2pQLJGJkrAAy4Af6nGFKQPYPY5B0fGvPQj9OY1iJwD1OFUVNKuguGfkBQQ4rx5PVwU9GseguJAA+9Tj/bKACQ1lP6sGxbbh75Hu3sd2GPMZ3roA8KH0ZLXDmC5eMB0HuKZej7ou3iE9rrtEPpEecy6RISYRKOu3F2kJUlkRYKd9JrL7AJhOWWSusKkzx/Ve5J8CTGtVMtekm8yK1NGLpLQiGemRuUSmEpPJKh93e3p6TJE/jzSVjfBoieoAAAAASUVORK5CYII=">
+            </div>
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Простая установка</h4>
+          <p class="text-body-secondary">Установка нашего программного обеспечения – легкая и быстрая задача, всего в
+            два клика!</p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVR4nO3YzatNURgG8OP7o2TkYEQZGCkSijIgH0PJCGGgFDN/g3yVCcVEpvwRpJzi+hgIkYHRjRSSGYWftrtObcc5e5/9sfY9p3uf2p3Bu9bzPs9a71r7PbvVmsUYAQtxCR/Uj/e4kOSIaeCi+Dgf00CySgm2R+De0d2JurnTSf5iXPlbswZyYHYHcjDjSgiP8SgWfxMGoo4vjBlhAAuwF5dTb9drOIT5VfkrIS8BNuFtRpvwGhvL8ldGVgKswZcw5CVOYhs24wRehNgnrC3K34SB6yE8gSV94kvxMIy5UZS/CQPdFT6SMX8rfuF5Uf4mDLwK4dM5HHuSsirK34SBmyE8ifV18zdhYB2+hiHfcScpp0EHtih/U9foBjzpc31OhkO+uwp/ZQybILwPzoUb6UePmXtYUYW/NMokwGLsw238DhR36+IvhKoJcCq1E/8ddHSSpyx/1UN8Frty5s/Bt0CzP5rQogawMoQ+Y3lOo9c1sCWWyOSQZaLPnLl4F8K3MG8Ad/LhKsHHfp2pqRLKQt+z0+9fVBYeDJh3AD/DmGc4g53JNyQcw/0Ux9EBHJ2c3BPDGGiHblL4bedO+tdEcucPQlJixwvwtVMtyvBaKppYhIO4khJ+FYexLLr4LpKXTarDfIPVrYLoqi8xr51awCT3qqIctZgoY0Bd4msqp86gQx+lbGKWU+Mr36QJscXHNKEp8TFMmOJqTnzNV2wvRzPi6zAx7eKrmBgZ8WVMjJz4IiZGVvwwJkZefJaJsRGf0TuV6qOmFT2rPh4r3+pB2Imn4Ym28n8AvSdj3eorzdAAAAAASUVORK5CYII=">
+            </div>
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Низкая цена</h4>
+          <p class="text-body-secondary">Наилучшее соотношение цены и качества по самой доступной цене.</p>
+        </div>
+
+        <div class="col d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <div
+              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <img
+                src="data:image/png;base64,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">
+            </div>
+          </div>
+          <h4 class="fw-semibold mb-0 text-body-emphasis">Система возврата</h4>
+          <p class="text-body-secondary">В случае если вас не устроил полученный продукт моно вернуть часть денег через
+            поддержку.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer class="container">
+  <p>© 2024 gCheat. Все права защищены.
+    <a href="/policy" style="text-decoration: none;">Политика</a>
+  </p>
+</footer>
+
+{% endblock %}

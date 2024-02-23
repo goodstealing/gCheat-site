@@ -1,0 +1,14 @@
+.disclaimer-container {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px;
+    text-align: justify;
+}
+
+.disclaimer-text {
+    font-size: 20px;
+}
+
+.keyword {
+    color: #0d6efd;
+}

@@ -1,0 +1,28 @@
+.link {
+  text-decoration: none;
+  color: #676a6d;
+  transition: color 0.3s ease; /* добавляем плавное переход цвета при изменении */
+}
+
+.link:hover {
+  color: #0d6efd; /* изменяем цвет при наведении */
+  animation: shake 0.5s; /* добавляем анимацию при наведении */
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
