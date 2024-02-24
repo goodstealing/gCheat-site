@@ -44,6 +44,20 @@ def login_page():
     return render_template("login.html")
 
 
+@app.route('/сheat-catalog/CS2-midnight')
+def midnight_page():
+    return render_template("CS2_midnight.html")
+
+
+@app.route('/сheat-catalog/minecraft-wurst')
+def wurst_page():
+    return render_template("minecraft_wurst.html")
+
+
+@app.route('/сheat-catalog/rust-phoenix')
+def phoenix_page():
+    return render_template("rust_phoenix.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
-

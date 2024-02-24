@@ -9,20 +9,19 @@
   animation: shake 0.5s;
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+
+.gray-btn {
+    color: white;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px; /* Добавляет отступ внутри контейнера */
+    background-color: #6c757d; /* Заливка внутри контейнера */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.gray-btn:hover {
+  background-color: #0d6efd;
+  animation: shake 0.5s;
 }
