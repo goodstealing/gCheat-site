@@ -8,11 +8,6 @@ def profile_page():
     return render_template("profile.html")
 
 
-@auth.route('/profile/<string:name>')
-def profile_page_str(name):
-    return f"This is the temporary page of the {name} user."
-
-
 @auth.route('/sign-up')
 def sign_up_page():
     return render_template("sign_up.html")
@@ -27,3 +22,10 @@ def login_page():
 def logout():
     return "sd"
 
+
+@auth.route('/user/<username>')
+def profile(username):
+    if username == 'goodstealing':
+        return f'Профиль пользователя {username}'
+    else:
+        return 'Пользователь не найден', 404
