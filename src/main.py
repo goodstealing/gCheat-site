@@ -5,7 +5,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def main_page():
-    return render_template("main_page.html")
+    return render_template("index.html")
 
 
 @main.route('/сheat-catalog')
