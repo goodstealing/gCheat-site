@@ -124,7 +124,8 @@
         </div>
 
         <div class="col-lg-4">
-          <img width="140" height="140" alt="Rust - Phoenix" src="static/img/rust_icon.webp">
+          <img width="140" height="140" alt="Rust - Phoenix" src="{{ url_for('static', filename='img/rust_icon.webp')}}">
+          
           <h2 class="fw-normal">Rust - Phoenix</h2>
           <p>Phoenix - это эксклюзивный софт, разработанный специально для Rust. Этот
             приватный софт предоставляет полный набор функций, необходимых для обеспечения комфортного
@@ -154,7 +155,7 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img src="static/img/feedback.webp"
+          <img src="{{ url_for('static', filename='img/feedback.webp')}}"
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
             alt="Описание изображения" width="500" height="500">
         </div>
@@ -171,7 +172,7 @@
             подписки и вам на почту приходит письмо с ключом и инструкцией</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img src="static/img/purchase2.webp"
+          <img src="{{ url_for('static', filename='img/purchase2.webp')}}"
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
             alt="Описание изображения" width="500" height="500">
         </div>
@@ -188,7 +189,7 @@
             поможем.</p>
         </div>
         <div class="col-md-5">
-          <img width="300" height="300" src="static/img/discord_ping.webp"
+          <img width="300" height="300" src="{{ url_for('static', filename='img/discord_ping.webp')}}"
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="ping discord meme">
         </div>
       </div>
