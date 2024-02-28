@@ -36,4 +36,3 @@ def wurst_page():
 @main.route('/сheat-catalog/rust-phoenix')
 def phoenix_page():
     return render_template("rust_phoenix.html")
-
