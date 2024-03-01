@@ -29,10 +29,10 @@
             используя свои учетные данные. В противном случае вы можете пройти простой процесс регистрации.</p>
         </div>
         <div class="modal-footer flex-nowrap p-0">
-          <a href="/sign-up"
+          <a href="{{ url_for('auth.signup') }}"
             class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><strong>Да,
               зарегистрироваться</strong></a>
-          <a href="/login" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 "
+          <a href="{{ url_for('auth.login') }}" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 "
             data-bs-dismiss="modal"><strong>Нет, войти</strong></a></a>
         </div>
       </div>

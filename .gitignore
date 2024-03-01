@@ -2,10 +2,11 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,python,flask
 
 ### Flask ###
-instance/*
-!instance/.gitignore
+src/instance/*
+!src/instance/.gitignore
 .webassets-cache
 .env
+.idea
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
@@ -72,7 +73,7 @@ db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
-instance/
+src/instance/
 
 # Scrapy stuff:
 .scrapy

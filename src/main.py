@@ -1,5 +1,6 @@
 from flask import render_template, Blueprint, url_for
 
+
 main = Blueprint('main', __name__)
 
 
